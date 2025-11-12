@@ -1,7 +1,7 @@
 import React from "react";
 import { Github, Twitter, MessageCircle, Youtube } from "lucide-react";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "../../utils";
+
+
 
 const footerLinks = {
   Product: [
@@ -77,12 +77,12 @@ export default function Footer() {
                 {links.map((link, index) => (
                   <li key={index}>
                     {link.isPage ? (
-                      <Link
-                        to={createPageUrl(link.href)}
+                      <a
+                        href={link.href}
                         className="text-gray-400 hover:text-cyan-400 transition-colors text-xs sm:text-sm"
                       >
                         {link.label}
-                      </Link>
+                      </a>
                     ) : (
                       <a
                         href={link.href}
