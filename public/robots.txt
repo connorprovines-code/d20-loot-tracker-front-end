@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://d20loottracker.com/sitemap.xml
+Sitemap: https://d20-loot-tracker.com/sitemap.xml
 
 # Crawl-delay for politeness (optional)
 Crawl-delay: 1
