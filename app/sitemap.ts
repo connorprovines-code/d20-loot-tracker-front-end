@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://d20-loot-tracker.com/guides',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://d20-loot-tracker.com/guides/dnd-loot-split-guide',
       lastModified: new Date(),
       changeFrequency: 'monthly',
