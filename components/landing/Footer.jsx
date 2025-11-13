@@ -15,6 +15,12 @@ const footerLinks = {
     { label: "Pathfinder 2e Tracker", href: "/pathfinder-loot-tracker", isPage: true },
     { label: "All Systems", href: "/" },
   ],
+  Resources: [
+    { label: "D&D Loot Split Guide", href: "/guides/dnd-loot-split-guide", isPage: true },
+    { label: "Pathfinder Bulk Guide", href: "/guides/pathfinder-2e-bulk-guide", isPage: true },
+    { label: "vs Google Sheets", href: "/vs/google-sheets-loot-tracker", isPage: true },
+    { label: "vs Foundry VTT", href: "/vs/foundry-vtt-loot-tracker", isPage: true },
+  ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy", isPage: true },
     { label: "Terms of Service", href: "#terms" },

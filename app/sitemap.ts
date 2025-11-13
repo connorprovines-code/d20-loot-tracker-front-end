@@ -21,6 +21,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://d20-loot-tracker.com/guides/dnd-loot-split-guide',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://d20-loot-tracker.com/guides/pathfinder-2e-bulk-guide',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://d20-loot-tracker.com/vs/google-sheets-loot-tracker',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://d20-loot-tracker.com/vs/foundry-vtt-loot-tracker',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://d20-loot-tracker.com/privacy',
       lastModified: new Date(),
       changeFrequency: 'yearly',
