@@ -35,7 +35,7 @@ export default function VideoDemo() {
               <div className="aspect-video bg-slate-900 flex items-center justify-center">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                  src="https://www.youtube.com/embed/f8pAK5uP4qg?autoplay=1"
                   title="D20 Loot Tracker Demo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
