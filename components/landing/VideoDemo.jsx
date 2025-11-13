@@ -24,18 +24,25 @@ export default function VideoDemo() {
           <div className="relative rounded-2xl overflow-hidden border border-cyan-500/20 shadow-2xl bg-slate-800/50 backdrop-blur-sm">
             {!isPlaying ? (
               <div className="relative aspect-video bg-slate-900 flex items-center justify-center cursor-pointer group" onClick={() => setIsPlaying(true)}>
+                <img
+                  src="/video-thumbnail.png"
+                  alt="Video Demo Thumbnail"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
                 <div className="relative z-10 flex flex-col items-center gap-4">
-                  <div className="w-20 h-20 rounded-full bg-cyan-500 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-400 transition-all duration-300 shadow-lg shadow-cyan-500/50">
-                    <Play className="w-10 h-10 text-white ml-1" fill="white" />
+                  <div className="bg-slate-900/80 backdrop-blur-sm rounded-2xl px-8 py-6 flex flex-col items-center gap-4">
+                    <div className="w-20 h-20 rounded-full bg-cyan-500 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-400 transition-all duration-300 shadow-lg shadow-cyan-500/50">
+                      <Play className="w-10 h-10 text-white ml-1" fill="white" />
+                    </div>
+                    <p className="text-white text-xl font-semibold">Watch Demo Video</p>
                   </div>
-                  <p className="text-white text-xl font-semibold">Watch Demo Video</p>
                 </div>
               </div>
             ) : (
               <div className="aspect-video bg-slate-900 flex items-center justify-center">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                  src="https://www.youtube.com/embed/59oqWW93UcA?autoplay=1"
                   title="D20 Loot Tracker Demo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

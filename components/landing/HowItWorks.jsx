@@ -7,21 +7,30 @@ const steps = [
     icon: Plus,
     title: "Create Your Campaign",
     description: "Sign up in 30 seconds and create your first campaign. Name it, add your players.",
-    color: "cyan",
+    bgColor: "bg-gradient-to-br from-cyan-500 to-cyan-600",
+    iconBg: "bg-cyan-500/20",
+    iconColor: "text-cyan-400",
+    shadowColor: "shadow-cyan-500/50",
   },
   {
     number: "2",
     icon: Package,
     title: "Add Your Loot",
     description: "Quickly add items as you find them. Mark as treasure or standard loot, assign to players.",
-    color: "blue",
+    bgColor: "bg-gradient-to-br from-blue-500 to-blue-600",
+    iconBg: "bg-blue-500/20",
+    iconColor: "text-blue-400",
+    shadowColor: "shadow-blue-500/50",
   },
   {
     number: "3",
     icon: RefreshCw,
     title: "Track & Collaborate",
     description: "Everyone sees updates instantly. Sell items, split gold, manage inventories in real-time.",
-    color: "green",
+    bgColor: "bg-gradient-to-br from-green-500 to-green-600",
+    iconBg: "bg-green-500/20",
+    iconColor: "text-green-400",
+    shadowColor: "shadow-green-500/50",
   },
 ];
 
@@ -49,15 +58,15 @@ export default function HowItWorks() {
               <div key={index} className="relative">
                 {/* Content */}
                 <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 text-center hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 relative">
-                  {/* Step number badge - now inside the card */}
-                  <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                    <div className={`w-12 h-12 rounded-full bg-gradient-to-br from-${step.color}-500 to-${step.color}-600 flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-${step.color}-500/50`}>
+                  {/* Step number badge - top left corner inside card */}
+                  <div className="absolute top-4 left-4">
+                    <div className={`w-10 h-10 rounded-full ${step.bgColor} flex items-center justify-center text-white text-lg font-bold shadow-lg ${step.shadowColor}`}>
                       {step.number}
                     </div>
                   </div>
 
-                  <div className={`w-16 h-16 mx-auto rounded-xl bg-${step.color}-500/20 flex items-center justify-center mb-6 mt-4`}>
-                    <step.icon className={`w-8 h-8 text-${step.color}-400`} />
+                  <div className={`w-16 h-16 mx-auto rounded-xl ${step.iconBg} flex items-center justify-center mb-6`}>
+                    <step.icon className={`w-8 h-8 ${step.iconColor}`} />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
                   <p className="text-gray-400 leading-relaxed">{step.description}</p>
