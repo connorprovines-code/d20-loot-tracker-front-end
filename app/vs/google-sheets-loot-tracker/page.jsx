@@ -18,8 +18,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "D20 Loot Tracker vs Google Sheets: Which Is Better for D&D? | Comparison",
-  description: "Honest comparison of D20 Loot Tracker vs Google Sheets for tracking D&D loot. When sheets work, when they fail, and which is right for your table.",
+  title: "D20 Loot Tracker vs Google Sheets: Which Is Better for DnD? | Comparison",
+  description: "Honest comparison of D20 Loot Tracker vs Google Sheets for tracking DnD loot. When sheets work, when they fail, and which is right for your table.",
   keywords: [
     "dnd loot tracker vs google sheets",
     "google sheets alternative dnd",
@@ -458,7 +458,7 @@ export default function VSGoogleSheets() {
               <Link href="/guides/dnd-loot-split-guide">
                 <div className="bg-slate-800/50 border border-slate-700 hover:border-purple-500/50 rounded-xl p-6 transition-all duration-300 cursor-pointer group">
                   <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                    How to Split Loot Fairly in D&D 5e
+                    How to Split Loot Fairly in DnD 5e
                   </h4>
                   <p className="text-gray-400 text-sm">
                     5 proven methods for splitting treasure without table arguments.

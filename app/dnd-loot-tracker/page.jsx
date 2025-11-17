@@ -19,8 +19,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
-  title: "D&D 5e Loot Tracker - Track Magic Items, Gold & Treasure for Dungeons & Dragons",
-  description: "Free real-time D&D 5e loot tracker. Manage attunement slots, platinum pieces, magic items by rarity, and party treasure. Perfect for D&D DMs and players. Start in 2 minutes.",
+  title: "DnD 5e Loot Tracker - Track Magic Items, Gold & Treasure for Dungeons & Dragons",
+  description: "Free real-time DnD 5e loot tracker. Manage attunement slots, platinum pieces, magic items by rarity, and party treasure. Perfect for DnD DMs and players. Start in 2 minutes.",
   keywords: [
     "dnd 5e loot tracker",
     "dungeons and dragons treasure tracker",
@@ -33,8 +33,8 @@ export const metadata = {
     "dnd campaign manager"
   ],
   openGraph: {
-    title: "D&D 5e Loot Tracker - Never Lose Track of Magic Items & Treasure",
-    description: "Free real-time loot tracking built specifically for D&D 5e. Track attunement, magic items, platinum pieces, and party gold.",
+    title: "DnD 5e Loot Tracker - Never Lose Track of Magic Items & Treasure",
+    description: "Free real-time loot tracking built specifically for DnD 5e. Track attunement, magic items, platinum pieces, and party gold.",
     url: "https://d20-loot-tracker.com/dnd-loot-tracker",
     siteName: "D20 Loot Tracker",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata = {
       url: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=1200&h=630&fit=crop",
       width: 1200,
       height: 630,
-      alt: "D&D 5e dice and character sheet - D20 Loot Tracker",
+      alt: "DnD 5e dice and character sheet - D20 Loot Tracker",
     }],
   },
   alternates: {
@@ -77,21 +77,21 @@ const dndFeatures = [
     title: "Attunement Tracking",
     description: "Track which magic items require attunement and monitor each player's 3-slot limit in real-time.",
     color: "cyan",
-    badge: "D&D Specific"
+    badge: "DnD Specific"
   },
   {
     icon: Gem,
     title: "Rarity-Based Organization",
     description: "Sort magic items by rarity (Common, Uncommon, Rare, Very Rare, Legendary, Artifact) with visual color coding.",
     color: "purple",
-    badge: "D&D Specific"
+    badge: "DnD Specific"
   },
   {
     icon: Coins,
     title: "5-Currency System",
     description: "Native support for Copper, Silver, Electrum, Gold, and Platinum pieces with automatic conversions.",
     color: "yellow",
-    badge: "D&D Specific"
+    badge: "DnD Specific"
   },
   {
     icon: Scroll,
@@ -156,13 +156,13 @@ export default function DnDLootTracker() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 backdrop-blur-sm mb-8">
               <Sparkles className="w-4 h-4 text-purple-400" />
               <span className="text-purple-300 text-sm font-medium">
-                Built for D&D 5e Campaigns
+                Built for DnD 5e Campaigns
               </span>
             </div>
 
             {/* Main heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              D&D 5e Loot Tracker for{" "}
+              DnD 5e Loot Tracker for{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-500">
                 Smart DMs
               </span>
@@ -171,7 +171,7 @@ export default function DnDLootTracker() {
             {/* Subheading */}
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               Track magic items, attunement slots, platinum pieces, and party treasure in real-time.
-              Stop using messy spreadsheets—start using a tool built for D&D.
+              Stop using messy spreadsheets—start using a tool built for DnD.
             </p>
 
             {/* CTAs */}
@@ -192,7 +192,7 @@ export default function DnDLootTracker() {
                   className="border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10 px-8 py-6 text-lg font-semibold rounded-xl backdrop-blur-sm w-full"
                 >
                   <BookOpen className="w-5 h-5 mr-2" />
-                  See D&D Features
+                  See DnD Features
                 </Button>
               </a>
             </div>
@@ -209,7 +209,7 @@ export default function DnDLootTracker() {
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-green-500" />
-                <span>Works with D&D Beyond</span>
+                <span>Works with DnD Beyond</span>
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function DnDLootTracker() {
               </span>
             </h2>
             <p className="text-xl text-gray-300">
-              Every D&D DM faces these loot tracking nightmares
+              Every DnD DM faces these loot tracking nightmares
             </p>
           </div>
 
@@ -256,7 +256,7 @@ export default function DnDLootTracker() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              D&D 5e{" "}
+              DnD 5e{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-500">
                 Specific Features
               </span>
@@ -280,7 +280,7 @@ export default function DnDLootTracker() {
                     <span className={`text-xs px-3 py-1 rounded-full ${
                       feature.badge === "Coming Soon"
                         ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500/30"
-                        : feature.badge === "D&D Specific"
+                        : feature.badge === "DnD Specific"
                         ? "bg-purple-500/20 text-purple-300 border border-purple-500/30"
                         : "bg-green-500/20 text-green-300 border border-green-500/30"
                     }`}>
@@ -305,7 +305,7 @@ export default function DnDLootTracker() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Built for{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-500">
-                D&D Campaigns
+                DnD Campaigns
               </span>
             </h2>
           </div>
@@ -373,7 +373,7 @@ export default function DnDLootTracker() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Run Your Best{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-500">
-              D&D Campaign?
+              DnD Campaign?
             </span>
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">

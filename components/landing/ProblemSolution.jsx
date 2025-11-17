@@ -31,7 +31,7 @@ export default function ProblemSolution() {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Why D&D Groups{" "}
+            Why DnD Groups{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Love This Loot Tracker
             </span>

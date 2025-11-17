@@ -50,14 +50,14 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 animate-slide-up leading-tight">
             The{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              D&D Loot Tracker
+              DnD Loot Tracker
             </span>{" "}
             Your Party Actually Wants to Use
           </h1>
 
           {/* Subheading - SEO optimized with keywords */}
           <p className="text-base sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto animate-slide-up-delay leading-relaxed px-4">
-            The D&D loot tracker built for parties who want to spend less time on bookkeeping and more time playing. Track treasure, split gold, and sync inventories for D&D 5e and Pathfinder.
+            The DnD loot tracker built for parties who want to spend less time on bookkeeping and more time playing. Track treasure, split gold, and sync inventories for DnD 5e and Pathfinder.
           </p>
 
           {/* CTAs - Mobile optimized */}
@@ -102,10 +102,10 @@ export default function Hero() {
           <div className="mt-12 sm:mt-16 animate-fade-in-delay-2 px-4">
             <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-cyan-500/20 shadow-2xl shadow-cyan-500/20 backdrop-blur-sm bg-slate-800/50 p-2 sm:p-4">
               <div className="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 rounded-lg flex items-center justify-center relative overflow-hidden">
-                {/* D&D themed background */}
+                {/* DnD themed background */}
                 <img
                   src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=1200&h=675&fit=crop"
-                  alt="D&D loot tracker in use during tabletop game session with dice and treasure"
+                  alt="DnD loot tracker in use during tabletop game session with dice and treasure"
                   className="w-full h-full object-cover rounded-lg opacity-70"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-slate-900/40" />

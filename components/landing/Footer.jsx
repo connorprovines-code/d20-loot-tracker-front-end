@@ -10,12 +10,12 @@ const footerLinks = {
     { label: "FAQ", href: "#faq" },
   ],
   "Game Systems": [
-    { label: "D&D 5e Loot Tracker", href: "/dnd-loot-tracker", isPage: true },
+    { label: "DnD 5e Loot Tracker", href: "/dnd-loot-tracker", isPage: true },
     { label: "Pathfinder 2e Tracker", href: "/pathfinder-loot-tracker", isPage: true },
     { label: "All Systems", href: "/" },
   ],
   Resources: [
-    { label: "D&D Loot Split Guide", href: "/guides/dnd-loot-split-guide", isPage: true },
+    { label: "DnD Loot Split Guide", href: "/guides/dnd-loot-split-guide", isPage: true },
     { label: "Pathfinder Bulk Guide", href: "/guides/pathfinder-2e-bulk-guide", isPage: true },
     { label: "vs Google Sheets", href: "/vs/google-sheets-loot-tracker", isPage: true },
     { label: "vs Foundry VTT", href: "/vs/foundry-vtt-loot-tracker", isPage: true },

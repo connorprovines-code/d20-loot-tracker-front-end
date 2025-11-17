@@ -401,12 +401,12 @@ export default function PathfinderLootTracker() {
         </div>
       </section>
 
-      {/* Comparison with D&D */}
+      {/* Comparison with DnD */}
       <section className="py-24 px-4 relative">
         <div className="container mx-auto max-w-4xl">
           <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 md:p-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Coming from D&D 5e?
+              Coming from DnD 5e?
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Pathfinder 2e has different systems (bulk instead of weight, item levels instead of just rarity,
@@ -417,7 +417,7 @@ export default function PathfinderLootTracker() {
                 variant="outline"
                 className="border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10"
               >
-                See D&D 5e Version
+                See DnD 5e Version
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>
             </a>

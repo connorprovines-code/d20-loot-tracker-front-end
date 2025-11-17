@@ -98,7 +98,7 @@ export default function PathfinderBulkGuide() {
             </h2>
             <div className="text-gray-300 space-y-4 leading-relaxed">
               <p>
-                If you're coming from D&D 5e, you're used to tracking weight in pounds. A longsword weighs 3 lbs. A backpack full of rope weighs 50 lbs. Your carrying capacity is Strength × 15.
+                If you're coming from DnD 5e, you're used to tracking weight in pounds. A longsword weighs 3 lbs. A backpack full of rope weighs 50 lbs. Your carrying capacity is Strength × 15.
               </p>
               <p>
                 Pathfinder 2e said: "Nobody actually enjoys calculating if their character can carry 147 lbs or 148 lbs."
@@ -643,10 +643,10 @@ export default function PathfinderBulkGuide() {
 
               <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">
-                  Q: How does bulk compare to D&D 5e weight?
+                  Q: How does bulk compare to DnD 5e weight?
                 </h3>
                 <p className="text-gray-300">
-                  Rough conversion: 1 Bulk ≈ 10 lbs in D&D 5e. But bulk also accounts for awkwardness. A greatsword (2 Bulk) is about 6 lbs but takes up more "bulk" because it's long and unwieldy.
+                  Rough conversion: 1 Bulk ≈ 10 lbs in DnD 5e. But bulk also accounts for awkwardness. A greatsword (2 Bulk) is about 6 lbs but takes up more "bulk" because it's long and unwieldy.
                 </p>
               </div>
             </div>
@@ -694,7 +694,7 @@ export default function PathfinderBulkGuide() {
               <Link href="/guides/dnd-loot-split-guide">
                 <div className="bg-slate-800/50 border border-slate-700 hover:border-purple-500/50 rounded-xl p-6 transition-all duration-300 cursor-pointer group">
                   <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                    How to Split Loot Fairly in D&D 5e
+                    How to Split Loot Fairly in DnD 5e
                   </h4>
                   <p className="text-gray-400 text-sm">
                     Learn 5 proven methods for splitting treasure without table arguments.

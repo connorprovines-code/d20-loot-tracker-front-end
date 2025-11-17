@@ -157,7 +157,7 @@ export default function VSFoundryVTT() {
                     Foundry requires everyone to run the client, learn the interface, and use a PC/laptop. Standalone trackers work from any device with a web browser.
                   </p>
                   <p className="font-semibold text-white mt-3">
-                    Stat: ~60% of D&D tables don't use VTTs at all (per Wizards surveys).
+                    Stat: ~60% of DnD tables don't use VTTs at all (per Wizards surveys).
                   </p>
                 </div>
               </div>
@@ -464,7 +464,7 @@ export default function VSFoundryVTT() {
               <Link href="/guides/dnd-loot-split-guide">
                 <div className="bg-slate-800/50 border border-slate-700 hover:border-purple-500/50 rounded-xl p-6 transition-all duration-300 cursor-pointer group">
                   <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                    How to Split Loot Fairly in D&D 5e
+                    How to Split Loot Fairly in DnD 5e
                   </h4>
                   <p className="text-gray-400 text-sm">
                     5 proven methods for splitting treasure without table arguments.

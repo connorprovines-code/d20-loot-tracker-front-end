@@ -57,12 +57,12 @@ export default function Features() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight px-4">
             Complete{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              D&D Loot Tracking
+              DnD Loot Tracking
             </span>{" "}
             Features
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 px-4">
-            Powerful features designed specifically for D&D 5e and Pathfinder campaigns
+            Powerful features designed specifically for DnD 5e and Pathfinder campaigns
           </p>
         </div>
 

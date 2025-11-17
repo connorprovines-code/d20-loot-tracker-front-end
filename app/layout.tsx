@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "D20 Loot Tracker - Real-Time TTRPG Loot & Gold Tracking for D&D",
-  description: "Free real-time collaborative loot tracker for D&D, Pathfinder, and tabletop RPGs. Track gold, split treasure, manage inventories. No credit card required.",
-  keywords: ["D&D loot tracker", "DnD gold tracker", "TTRPG loot", "Pathfinder treasure", "tabletop RPG tools", "party inventory", "D20 loot", "campaign manager", "real-time collaboration"],
+  title: "D20 Loot Tracker - Real-Time TTRPG Loot & Gold Tracking for DnD",
+  description: "Free real-time collaborative loot tracker for DnD, Pathfinder, and tabletop RPGs. Track gold, split treasure, manage inventories. No credit card required.",
+  keywords: ["DnD loot tracker", "DnD gold tracker", "TTRPG loot", "Pathfinder treasure", "tabletop RPG tools", "party inventory", "D20 loot", "campaign manager", "real-time collaboration"],
   authors: [{ name: "D20 Loot Tracker" }],
   openGraph: {
     title: "D20 Loot Tracker - Never Lose Track of Loot Again",
-    description: "Real-time collaborative loot tracking for D&D and TTRPG campaigns. Free, no credit card required.",
+    description: "Real-time collaborative loot tracking for DnD and TTRPG campaigns. Free, no credit card required.",
     url: "https://d20loottracker.com",
     siteName: "D20 Loot Tracker",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "D20 Loot Tracker - Real-Time TTRPG Loot Tracking",
-    description: "Free collaborative loot tracker for D&D and tabletop RPGs",
+    description: "Free collaborative loot tracker for DnD and tabletop RPGs",
     images: ["https://d20loottracker.com/og-image.png"],
   },
   robots: {

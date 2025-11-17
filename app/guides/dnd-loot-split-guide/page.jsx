@@ -18,8 +18,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "How to Split Loot Fairly in D&D 5e (5 Methods + Examples) | D20 Loot Tracker",
-  description: "Learn 5 proven methods for splitting treasure fairly in D&D 5e. Includes real table examples, decision flowchart, and solutions for common loot distribution problems. Free guide for DMs.",
+  title: "How to Split Loot Fairly in DnD 5e (5 Methods + Examples) | D20 Loot Tracker",
+  description: "Learn 5 proven methods for splitting treasure fairly in DnD 5e. Includes real table examples, decision flowchart, and solutions for common loot distribution problems. Free guide for DMs.",
   keywords: [
     "how to split loot in dnd 5e",
     "dnd party gold division",
@@ -30,8 +30,8 @@ export const metadata = {
     "dnd treasure distribution methods"
   ],
   openGraph: {
-    title: "How to Split Loot Fairly in D&D 5e - Complete DM Guide",
-    description: "5 proven methods for splitting treasure fairly in D&D, with real examples and solutions to common problems.",
+    title: "How to Split Loot Fairly in DnD 5e - Complete DM Guide",
+    description: "5 proven methods for splitting treasure fairly in DnD, with real examples and solutions to common problems.",
     url: "https://d20-loot-tracker.com/guides/dnd-loot-split-guide",
     type: "article",
   },
@@ -51,12 +51,12 @@ export default function DnDLootSplitGuide() {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 backdrop-blur-sm mb-6">
               <BookOpen className="w-4 h-4 text-cyan-400" />
-              <span className="text-cyan-300 text-sm font-medium">D&D 5e Guide</span>
+              <span className="text-cyan-300 text-sm font-medium">DnD 5e Guide</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               How to Split Loot Fairly in{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                D&D 5e
+                DnD 5e
               </span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
@@ -110,7 +110,7 @@ export default function DnDLootSplitGuide() {
                 Loot distribution is where the most table drama happens—not in combat, not in roleplay, but when dividing treasure. A clear system prevents arguments, keeps players engaged, and makes your game run smoother.
               </p>
               <p>
-                The problem? There's no "right" answer in the Player's Handbook. D&D 5e gives you loot tables but zero guidance on how to split it fairly.
+                The problem? There's no "right" answer in the Player's Handbook. DnD 5e gives you loot tables but zero guidance on how to split it fairly.
               </p>
             </div>
           </section>
@@ -544,7 +544,7 @@ export default function DnDLootSplitGuide() {
                 </Button>
               </a>
               <p className="text-gray-400 text-sm mt-4">
-                No credit card • 2-minute setup • Works with any D&D 5e campaign
+                No credit card • 2-minute setup • Works with any DnD 5e campaign
               </p>
             </div>
           </section>
@@ -556,10 +556,10 @@ export default function DnDLootSplitGuide() {
               <Link href="/dnd-loot-tracker">
                 <div className="bg-slate-800/50 border border-slate-700 hover:border-purple-500/50 rounded-xl p-6 transition-all duration-300 cursor-pointer group">
                   <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                    D&D 5e Loot Tracker Features
+                    DnD 5e Loot Tracker Features
                   </h4>
                   <p className="text-gray-400 text-sm">
-                    See how D20 Loot Tracker handles attunement, currency conversion, and magic item tracking for D&D 5e.
+                    See how D20 Loot Tracker handles attunement, currency conversion, and magic item tracking for DnD 5e.
                   </p>
                   <div className="flex items-center gap-2 mt-4 text-purple-400 text-sm font-medium">
                     Learn More <ArrowRight className="w-4 h-4" />

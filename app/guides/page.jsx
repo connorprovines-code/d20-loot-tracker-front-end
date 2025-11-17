@@ -13,8 +13,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "D&D & Pathfinder Loot Tracking Guides | D20 Loot Tracker",
-  description: "Free guides for D&D 5e and Pathfinder 2e loot tracking. Learn how to split treasure fairly, manage bulk, and choose the right tools for your table.",
+  title: "DnD & Pathfinder Loot Tracking Guides | D20 Loot Tracker",
+  description: "Free guides for DnD 5e and Pathfinder 2e loot tracking. Learn how to split treasure fairly, manage bulk, and choose the right tools for your table.",
   keywords: [
     "dnd loot tracking guide",
     "pathfinder 2e bulk guide",
@@ -29,12 +29,12 @@ export const metadata = {
 
 const guides = [
   {
-    title: "How to Split Loot Fairly in D&D 5e",
+    title: "How to Split Loot Fairly in DnD 5e",
     description: "5 proven methods for splitting treasure without table arguments. Includes real examples and decision flowchart.",
     href: "/guides/dnd-loot-split-guide",
     icon: Coins,
     color: "purple",
-    tags: ["D&D 5e", "Guide", "1,500 words"]
+    tags: ["DnD 5e", "Guide", "1,500 words"]
   },
   {
     title: "Pathfinder 2e Bulk System Explained",
@@ -85,7 +85,7 @@ export default function GuidesHub() {
               </span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              Free guides for D&D 5e and Pathfinder 2e DMs. Learn proven strategies, compare tools, and level up your loot tracking game.
+              Free guides for DnD 5e and Pathfinder 2e DMs. Learn proven strategies, compare tools, and level up your loot tracking game.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function GuidesHub() {
         <div className="container mx-auto max-w-6xl">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-white mb-3">System-Specific Guides</h2>
-            <p className="text-gray-400">Deep dives into D&D 5e and Pathfinder 2e mechanics</p>
+            <p className="text-gray-400">Deep dives into DnD 5e and Pathfinder 2e mechanics</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -180,7 +180,7 @@ export default function GuidesHub() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-2xl p-8 md:p-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Try the Best D&D Loot Tracker?
+              Ready to Try the Best DnD Loot Tracker?
             </h2>
             <p className="text-xl text-gray-300 mb-6 max-w-2xl mx-auto">
               Free forever. No credit card. 2-minute setup. Works on mobile and desktop.
