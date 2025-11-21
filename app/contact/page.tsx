@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import type { Metadata } from "next";
-import { Button } from "@/components/ui/button";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import Navigation from "@/components/landing/Navigation";
 import Footer from "@/components/landing/Footer";
@@ -165,7 +164,7 @@ export default function ContactPage() {
             )}
 
             {/* Submit Button */}
-            <Button
+            <button
               type="submit"
               disabled={isSubmitting}
               className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
@@ -200,7 +199,7 @@ export default function ContactPage() {
                   Send Message
                 </span>
               )}
-            </Button>
+            </button>
           </form>
         </div>
 
