@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import Navigation from "@/components/landing/Navigation";
 import Footer from "@/components/landing/Footer";
@@ -88,13 +87,13 @@ export default function ContactPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Topic Field */}
             <div className="space-y-2">
-              <Label
+              <label
                 htmlFor="topic"
                 className="text-white font-medium flex items-center gap-2"
               >
                 <MessageSquare className="w-4 h-4 text-cyan-400" />
                 Message Topic
-              </Label>
+              </label>
               <select
                 id="topic"
                 name="topic"
@@ -114,13 +113,13 @@ export default function ContactPage() {
 
             {/* Email Field */}
             <div className="space-y-2">
-              <Label
+              <label
                 htmlFor="email"
                 className="text-white font-medium flex items-center gap-2"
               >
                 <Mail className="w-4 h-4 text-cyan-400" />
                 Your Email
-              </Label>
+              </label>
               <Input
                 id="email"
                 name="email"
@@ -135,13 +134,13 @@ export default function ContactPage() {
 
             {/* Message Field */}
             <div className="space-y-2">
-              <Label
+              <label
                 htmlFor="message"
                 className="text-white font-medium flex items-center gap-2"
               >
                 <Send className="w-4 h-4 text-cyan-400" />
                 Your Message
-              </Label>
+              </label>
               <Textarea
                 id="message"
                 name="message"
