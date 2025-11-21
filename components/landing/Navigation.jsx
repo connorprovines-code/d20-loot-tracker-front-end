@@ -20,9 +20,9 @@ export default function Navigation() {
   const navLinks = [
     { label: "Features", href: "#features" },
     { label: "Guides", href: "/guides" },
-    { label: "Contact", href: "/contact" },
     { label: "D&D 5e", href: "/dnd-loot-tracker" },
     { label: "Pathfinder", href: "/pathfinder-loot-tracker" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
