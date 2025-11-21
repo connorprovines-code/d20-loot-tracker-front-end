@@ -31,10 +31,10 @@ export default function ProblemSolution() {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Stop <span className="text-red-400">Fighting</span> Over Loot
+            Why DnD Players Need a <span className="text-red-400">Loot Tracker</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Common problems that slow down your game sessions—solved instantly
+            Common DnD loot tracking problems that slow down your game sessions—solved instantly
           </p>
         </div>
 

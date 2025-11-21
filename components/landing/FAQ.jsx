@@ -5,8 +5,8 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "What games does this work with?",
-    answer: "Any D20-based TTRPG! D&D 5e, Pathfinder 1e/2e, Starfinder, 13th Age, and more. If your game uses loot, gold, and inventories, D20 Loot Tracker will work perfectly.",
+    question: "What games does this DnD loot tracker work with?",
+    answer: "Any D20-based TTRPG! D&D 5e, Pathfinder 1e/2e, Starfinder, 13th Age, and more. If your game uses loot, gold, and inventories, our DnD loot tracker will work perfectly.",
   },
   {
     question: "Do I need to install anything?",
@@ -46,7 +46,7 @@ export default function FAQ() {
             </span>
           </h2>
           <p className="text-xl text-gray-300">
-            Everything you need to know about D20 Loot Tracker
+            Common questions about our DnD loot tracker
           </p>
         </div>
 

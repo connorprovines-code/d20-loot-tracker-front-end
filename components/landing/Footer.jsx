@@ -53,8 +53,8 @@ export default function Footer() {
               <span className="text-white font-bold text-lg sm:text-xl">D20 Loot Tracker</span>
             </div>
             <p className="text-gray-400 text-sm sm:text-base mb-6 max-w-xs">
-              Real-time collaborative loot tracking for tabletop RPG campaigns.
-              Never lose track of treasure again.
+              The best DnD loot tracker for tabletop RPG campaigns.
+              Real-time treasure tracking for D&D and Pathfinder.
             </p>
             {/* Social links */}
             <div className="flex gap-3">
@@ -104,12 +104,19 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 sm:pt-8 border-t border-slate-800">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 mb-4">
             <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
               © 2024 D20 Loot Tracker • Built for the TTRPG Community
             </p>
             <p className="text-gray-500 text-xs sm:text-sm text-center md:text-right">
               Powered by React, Supabase, and lots of ☕
+            </p>
+          </div>
+          <div className="pt-4 border-t border-slate-800">
+            <p className="text-gray-500 text-xs text-center max-w-4xl mx-auto leading-relaxed">
+              DnD, D&D, and Dungeons & Dragons are trademarks of Wizards of the Coast LLC.
+              Pathfinder is a trademark of Paizo Inc. This tool is not affiliated with,
+              endorsed by, or sponsored by Wizards of the Coast or Paizo Inc.
             </p>
           </div>
         </div>

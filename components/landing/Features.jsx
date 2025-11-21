@@ -55,13 +55,13 @@ export default function Features() {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight px-4">
-            Everything You Need to Manage{" "}
+            The Complete{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              Campaign Loot
+              DnD Loot Tracker
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 px-4">
-            Powerful features designed specifically for tabletop RPG campaigns
+            Everything you need for DnD loot tracking in one powerful tool
           </p>
         </div>
 

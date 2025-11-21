@@ -56,9 +56,9 @@ export default function Hero() {
 
           {/* Subheading - SEO optimized with keywords */}
           <p className="text-base sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto animate-slide-up-delay leading-relaxed px-4">
-            Real-time collaborative loot tracking for D&D, Pathfinder, and D20
-            TTRPGs. Manage gold, split treasure, and track inventories across
-            your entire party.
+            The best DnD loot tracker for real-time party treasure management.
+            Track gold, split loot, and manage inventories for D&D, Pathfinder,
+            and all your tabletop RPG campaigns.
           </p>
 
           {/* CTAs - Mobile optimized */}

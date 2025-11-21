@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "D20 Loot Tracker - Real-Time TTRPG Loot & Gold Tracking for D&D",
-  description: "Free real-time collaborative loot tracker for D&D, Pathfinder, and tabletop RPGs. Track gold, split treasure, manage inventories. No credit card required.",
-  keywords: ["D&D loot tracker", "DnD gold tracker", "TTRPG loot", "Pathfinder treasure", "tabletop RPG tools", "party inventory", "D20 loot", "campaign manager", "real-time collaboration"],
+  title: "DnD Loot Tracker - Real-Time D&D Loot & Gold Tracking | D20 Loot Tracker",
+  description: "Free DnD loot tracker for D&D, Pathfinder, and all tabletop RPGs. Track gold, split treasure, manage party inventories in real-time. No credit card required.",
+  keywords: ["DnD loot tracker", "dnd loot tracker", "D&D loot tracker", "DnD gold tracker", "dnd treasure tracker", "TTRPG loot", "Pathfinder treasure", "tabletop RPG tools", "party inventory", "D20 loot", "campaign manager", "real-time collaboration"],
   authors: [{ name: "D20 Loot Tracker" }],
   openGraph: {
     title: "D20 Loot Tracker - Never Lose Track of Loot Again",
@@ -74,7 +74,7 @@ export default function RootLayout({
           "price": "0",
           "priceCurrency": "USD"
         },
-        "description": "Free real-time collaborative loot tracker for D&D, Pathfinder, and tabletop RPGs. Track gold, split treasure, manage inventories.",
+        "description": "Free DnD loot tracker for D&D, Pathfinder, and all tabletop RPGs. Track gold, split treasure, manage party inventories in real-time.",
         "featureList": [
           "Real-time collaborative tracking",
           "Automatic gold splitting",
