@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import Navigation from "@/components/landing/Navigation";
 import Footer from "@/components/landing/Footer";
@@ -120,7 +118,7 @@ export default function ContactPage() {
                 <Mail className="w-4 h-4 text-cyan-400" />
                 Your Email
               </label>
-              <Input
+              <input
                 id="email"
                 name="email"
                 type="email"
@@ -141,7 +139,7 @@ export default function ContactPage() {
                 <Send className="w-4 h-4 text-cyan-400" />
                 Your Message
               </label>
-              <Textarea
+              <textarea
                 id="message"
                 name="message"
                 value={formData.message}
