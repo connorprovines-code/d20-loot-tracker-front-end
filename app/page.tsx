@@ -1,6 +1,5 @@
 import Navigation from "@/components/landing/Navigation";
 import Hero from "@/components/landing/Hero";
-import VideoDemo from "@/components/landing/VideoDemo";
 import ProblemSolution from "@/components/landing/ProblemSolution";
 import Features from "@/components/landing/Features";
 import HowItWorks from "@/components/landing/HowItWorks";
@@ -50,7 +49,6 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900">
       <Navigation />
       <Hero />
-      <VideoDemo />
       <ProblemSolution />
       <Features />
       <HowItWorks />

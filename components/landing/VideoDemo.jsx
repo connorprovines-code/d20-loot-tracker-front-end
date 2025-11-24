@@ -7,55 +7,44 @@ export default function VideoDemo() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section id="video-demo" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            See It In <span className="text-cyan-400">Action</span>
-          </h2>
-          <p className="text-xl text-gray-300">
-            Watch how easy it is to manage loot, split gold, and keep your party
-            organized in real-time.
-          </p>
-        </div>
+    <div className="mt-12 sm:mt-16 animate-fade-in-delay-2 px-4">
+      <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-cyan-500/20 shadow-2xl shadow-cyan-500/20 backdrop-blur-sm bg-slate-800/50 p-2 sm:p-4">
+        {!isPlaying ? (
+          <div className="relative aspect-video bg-slate-900 rounded-lg flex items-center justify-center cursor-pointer group" onClick={() => setIsPlaying(true)}>
+            <img
+              src="/video-thumbnail.png"
+              alt="D&D Loot Tracker Demo Video"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-slate-900/40" />
 
-        <div className="relative group">
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300" />
-          <div className="relative rounded-2xl overflow-hidden border border-cyan-500/20 shadow-2xl bg-slate-800/50 backdrop-blur-sm">
-            {!isPlaying ? (
-              <div className="relative aspect-video bg-slate-900 flex items-center justify-center cursor-pointer group" onClick={() => setIsPlaying(true)}>
-                <img
-                  src="/video-thumbnail.png"
-                  alt="Video Demo Thumbnail"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="relative z-10 flex flex-col items-center gap-4">
-                  <div className="bg-slate-950/95 backdrop-blur-md rounded-2xl px-10 py-8 flex flex-col items-center gap-4 border-2 border-cyan-500/30 shadow-2xl">
-                    <div className="w-20 h-20 rounded-full bg-cyan-500 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-400 transition-all duration-300 shadow-lg shadow-cyan-500/50">
-                      <Play className="w-10 h-10 text-white ml-1" fill="white" />
-                    </div>
-                    <p className="text-slate-100 text-xl font-bold tracking-wide">Watch Demo Video</p>
-                  </div>
-                </div>
+            {/* Overlay grid pattern */}
+            <div className="absolute inset-0 opacity-10" style={{
+              backgroundImage: 'linear-gradient(rgba(6, 182, 212, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.3) 1px, transparent 1px)',
+              backgroundSize: '40px 40px'
+            }} />
+
+            {/* Central "Watch in Action" Button - Mobile optimized */}
+            <div className="relative z-20 p-4">
+              <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white px-6 sm:px-12 py-3 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-lg sm:text-2xl shadow-2xl transition-all duration-300 hover:scale-110 flex items-center gap-2 sm:gap-3">
+                <Play className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" fill="white" />
+                <span className="whitespace-nowrap">Watch in Action</span>
               </div>
-            ) : (
-              <div className="aspect-video bg-slate-900 flex items-center justify-center">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/59oqWW93UcA?autoplay=1"
-                  title="D20 Loot Tracker Demo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            )}
+            </div>
           </div>
-          <p className="text-center text-gray-400 mt-6 text-sm">
-            60-second overview of all features
-          </p>
-        </div>
+        ) : (
+          <div className="aspect-video bg-slate-900 rounded-lg flex items-center justify-center">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/59oqWW93UcA?autoplay=1"
+              title="D20 Loot Tracker Demo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        )}
       </div>
-    </section>
+    </div>
   );
 }

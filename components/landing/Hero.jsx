@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Play, Sparkles, Shield, Users } from "lucide-react";
+import VideoDemo from "./VideoDemo";
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -58,7 +59,7 @@ export default function Hero() {
 
           {/* Subheading - SEO optimized with keywords */}
           <p className="text-base sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto animate-slide-up-delay leading-relaxed px-4">
-            Track gold, split loot instantly, and manage your party's treasure in real-time.
+            Track gold, split loot instantly, and manage your party's hoard in real-time.
             Built for D&D, Pathfinder, and all tabletop RPGs.
           </p>
 
@@ -100,34 +101,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* App screenshot mockup - Mobile optimized */}
-          <div className="mt-12 sm:mt-16 animate-fade-in-delay-2 px-4">
-            <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-cyan-500/20 shadow-2xl shadow-cyan-500/20 backdrop-blur-sm bg-slate-800/50 p-2 sm:p-4">
-              <div className="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 rounded-lg flex items-center justify-center relative overflow-hidden">
-                {/* D&D themed background */}
-                <img
-                  src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=1200&h=675&fit=crop"
-                  alt="D&D tabletop game session with dice, miniatures, and loot tracking in action"
-                  className="w-full h-full object-cover rounded-lg opacity-70"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-slate-900/40" />
-                
-                {/* Overlay grid pattern */}
-                <div className="absolute inset-0 opacity-10" style={{
-                  backgroundImage: 'linear-gradient(rgba(6, 182, 212, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.3) 1px, transparent 1px)',
-                  backgroundSize: '40px 40px'
-                }} />
-
-                {/* Central "Watch in Action" Button - Mobile optimized */}
-                <a href="https://app.d20-loot-tracker.com/" className="absolute inset-0 flex items-center justify-center z-20 p-4">
-                  <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white px-6 sm:px-12 py-3 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-lg sm:text-2xl shadow-2xl transition-all duration-300 hover:scale-110 flex items-center gap-2 sm:gap-3">
-                    <Play className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" fill="white" />
-                    <span className="whitespace-nowrap">Watch in Action</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+          {/* Video Demo - Mobile optimized */}
+          <VideoDemo />
         </div>
       </div>
 
