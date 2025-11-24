@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, Coins, Users, Scroll } from "lucide-react";
+import { BookOpen, Coins, Users, Scroll, Database, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "D&D and TTRPG Guides | D20 Loot Tracker",
-  description: "Free guides for D&D players and DMs. Learn how to track loot, manage gold, organize party inventory, and more. Helpful tips for new and experienced players.",
-  keywords: ["D&D guides", "TTRPG tips", "dungeon master guides", "new player help", "D&D tutorials", "tabletop rpg advice"],
+  description: "Free guides for D&D players and DMs. Learn how to track loot, manage gold, organize party inventory, use D&D 5e API, track attunement, and more. Helpful tips for new and experienced players.",
+  keywords: ["D&D guides", "TTRPG tips", "dungeon master guides", "new player help", "D&D tutorials", "tabletop rpg advice", "dnd 5e api", "dnd attunement", "dnd item lookup", "pathfinder bulk system"],
 };
 
 export default function GuidesIndex() {
@@ -37,6 +37,20 @@ export default function GuidesIndex() {
       href: "/guides/pathfinder-2e-bulk-system",
       icon: Scroll,
       tags: ["Pathfinder 2e", "Players", "System Mastery"]
+    },
+    {
+      title: "D&D 5e API Item Lookup: Complete Guide",
+      description: "Save time with instant item lookups from the official D&D 5e API. Auto-populate costs, rarity, attunement, and descriptions in seconds.",
+      href: "/guides/dnd-5e-api-item-lookup",
+      icon: Database,
+      tags: ["D&D 5e", "Players", "DMs", "Time-Saver"]
+    },
+    {
+      title: "D&D Attunement Tracking Made Easy",
+      description: "Master the 3-slot attunement limit. Learn the rules, avoid common mistakes, and track attunement automatically.",
+      href: "/guides/dnd-attunement-tracking",
+      icon: Sparkles,
+      tags: ["D&D 5e", "Players", "Magic Items"]
     }
   ];
 
