@@ -1,8 +1,14 @@
 import React from "react";
-import { Users, Coins, Package, ShoppingBag, FolderOpen, ScrollText, Check } from "lucide-react";
+import { Users, Coins, Package, ShoppingBag, FolderOpen, ScrollText, Check, Search, Layers } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const mainFeatures = [
+  {
+    icon: Search,
+    title: "API-Powered Item Lookup",
+    description: "Search thousands of D&D 5e and Pathfinder items from official APIs. Auto-populate costs, rarity, attunement, and bulk instantly.",
+    color: "purple",
+  },
   {
     icon: Users,
     title: "Real-Time Collaboration",
@@ -14,6 +20,12 @@ const mainFeatures = [
     title: "Smart Gold Distribution",
     description: "Automatically split treasure equally, or customize who gets what. Toggle party fund on/off.",
     color: "yellow",
+  },
+  {
+    icon: Layers,
+    title: "Multi-System Support",
+    description: "Built for D&D 5e, Pathfinder 1e, Pathfinder 2e, and more. Get system-specific features like attunement, bulk, and rarity tracking.",
+    color: "indigo",
   },
   {
     icon: Package,
@@ -43,8 +55,8 @@ const mainFeatures = [
 
 const additionalFeatures = [
   "Treasure vs Loot classification (100% vs 50% sell value)",
-  "Bulk import for quick loot entry",
-  "Charge tracking for consumables",
+  "Advanced bulk import - paste formatted loot lists and import dozens of items in seconds",
+  "Consumable charge management with auto-depletion when empty",
   "Mobile-responsive design",
   "Secure authentication & data privacy",
 ];

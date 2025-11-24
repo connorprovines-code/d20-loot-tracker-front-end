@@ -14,7 +14,9 @@ import {
   Award,
   Boxes,
   Gem,
-  ChevronRight
+  ChevronRight,
+  Database,
+  Calculator
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -31,7 +33,12 @@ export const metadata = {
     "pathfinder rune tracker",
     "pathfinder party loot",
     "pathfinder gm tools",
-    "pf2e campaign manager"
+    "pf2e campaign manager",
+    "pathfinder item database",
+    "pathfinder 2e item lookup",
+    "pathfinder bulk calculator",
+    "pf2e encumbrance tracker",
+    "pathfinder 1e item lookup"
   ],
   openGraph: {
     title: "Pathfinder 2e Loot Tracker - Never Lose Track of Treasure & Bulk",
@@ -74,9 +81,23 @@ const pf2ePainPoints = [
 
 const pf2eFeatures = [
   {
+    icon: Database,
+    title: "Pathfinder API Integration",
+    description: "Search items from official Pathfinder 1e and 2e APIs. Auto-populate item data including costs, bulk values, and level information instantly.",
+    color: "indigo",
+    badge: "PF Specific"
+  },
+  {
+    icon: Calculator,
+    title: "Automatic Bulk Calculation",
+    description: "System calculates total bulk per character in real-time. Get warnings when encumbered (5 bulk) or max bulk is reached (10 bulk).",
+    color: "teal",
+    badge: "PF2e Specific"
+  },
+  {
     icon: Scale,
     title: "Bulk Tracking",
-    description: "Automatic bulk calculation for each player. Get warnings when encumbered (5 bulk) or max bulk is reached (10 bulk).",
+    description: "Track bulk for every item with decimal precision. Monitor encumbrance across your entire party at a glance.",
     color: "cyan",
     badge: "PF2e Specific"
   },
@@ -88,13 +109,6 @@ const pf2eFeatures = [
     badge: "PF2e Specific"
   },
   {
-    icon: Swords,
-    title: "Rune Management",
-    description: "Track fundamental runes (potency, striking, resilient) and property runes separately from base items.",
-    color: "orange",
-    badge: "Coming Soon"
-  },
-  {
     icon: Coins,
     title: "4-Currency System",
     description: "Native support for Copper, Silver, Gold, and Platinum pieces (no electrum in PF2e).",
@@ -102,17 +116,10 @@ const pf2eFeatures = [
     badge: "PF2e Specific"
   },
   {
-    icon: Boxes,
-    title: "Formula Book",
-    description: "Track crafting formulas separately from items. Note formula level, item type, and who knows it.",
-    color: "purple",
-    badge: "Coming Soon"
-  },
-  {
-    icon: TrendingUp,
-    title: "Treasure by Level",
-    description: "See recommended treasure totals by party level based on PF2e Core Rulebook guidelines.",
-    color: "green",
+    icon: Swords,
+    title: "Rune Management",
+    description: "Track fundamental runes (potency, striking, resilient) and property runes separately from base items.",
+    color: "orange",
     badge: "Coming Soon"
   }
 ];

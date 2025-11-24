@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://d20-loot-tracker.com/features',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: 'https://d20-loot-tracker.com/guides',
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -46,6 +52,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://d20-loot-tracker.com/guides/pathfinder-2e-bulk-system',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://d20-loot-tracker.com/guides/dnd-5e-api-item-lookup',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://d20-loot-tracker.com/guides/dnd-attunement-tracking',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,

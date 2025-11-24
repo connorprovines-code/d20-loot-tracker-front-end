@@ -14,7 +14,9 @@ import {
   BookOpen,
   Clock,
   Zap,
-  TrendingUp
+  TrendingUp,
+  Database,
+  Calculator
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -31,7 +33,12 @@ export const metadata = {
     "dnd platinum pieces",
     "dnd party loot manager",
     "dnd dm tools",
-    "dnd campaign manager"
+    "dnd campaign manager",
+    "dnd 5e item database",
+    "dnd srd item lookup",
+    "dnd attunement calculator",
+    "dnd magic item value calculator",
+    "5e magic item rarity value"
   ],
   openGraph: {
     title: "D&D 5e Loot Tracker - Never Lose Track of Magic Items & Treasure",
@@ -74,10 +81,24 @@ const dndPainPoints = [
 
 const dndFeatures = [
   {
+    icon: Database,
+    title: "D&D 5e SRD Integration",
+    description: "Search equipment and magic items from the official D&D 5e API. Instantly add items with correct pricing, rarity, and attunement requirements pre-filled.",
+    color: "indigo",
+    badge: "D&D Specific"
+  },
+  {
     icon: Shield,
     title: "Attunement Tracking",
-    description: "Track which magic items require attunement and monitor each player's 3-slot limit in real-time.",
+    description: "Automatic attunement detection from D&D 5e API. Enforce 3-slot limits per character with visual warnings. Toggle attunement status with one click.",
     color: "cyan",
+    badge: "D&D Specific"
+  },
+  {
+    icon: Calculator,
+    title: "Automatic Rarity Valuation",
+    description: "System estimates magic item values by rarity (Common: 100gp, Uncommon: 500gp, Rare: 5,000gp, Very Rare: 50,000gp, Legendary: 500,000gp). Fully customizable.",
+    color: "pink",
     badge: "D&D Specific"
   },
   {
@@ -95,25 +116,11 @@ const dndFeatures = [
     badge: "D&D Specific"
   },
   {
-    icon: Scroll,
-    title: "Spell Scroll Registry",
-    description: "Track spell scrolls separately with spell level, school, and casting time notes.",
-    color: "blue",
-    badge: "Coming Soon"
-  },
-  {
     icon: Zap,
     title: "Charge Tracking",
-    description: "Monitor charges on wands, rods, and staffs. Set max charges and get alerts when items run low.",
+    description: "Monitor charges on wands, rods, and staffs. Items automatically deplete and log to history when they hit zero charges.",
     color: "orange",
     badge: "Available"
-  },
-  {
-    icon: BookOpen,
-    title: "Short Rest Integration",
-    description: "Log short rests to track attunement timing (requires 1 short rest to attune).",
-    color: "green",
-    badge: "Coming Soon"
   }
 ];
 
