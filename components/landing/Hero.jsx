@@ -48,10 +48,12 @@ export default function Hero() {
 
           {/* Main heading - SEO optimized */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 animate-slide-up leading-tight">
-            Never Lose Track of{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              Loot Again
+            Claim Your{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500">
+              Loot
             </span>
+            <br />
+            <span className="text-2xl sm:text-4xl md:text-5xl text-gray-300">Before the Rogue Does</span>
           </h1>
 
           {/* Subheading - SEO optimized with keywords */}
@@ -66,7 +68,7 @@ export default function Hero() {
             <a href="https://app.d20-loot-tracker.com/" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 w-full"
+                className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-amber-500/50 transition-all duration-300 hover:scale-105 w-full"
               >
                 <Shield className="w-5 h-5 mr-2 flex-shrink-0" />
                 Start Free Campaign
@@ -86,15 +88,15 @@ export default function Hero() {
           {/* Trust indicators - Mobile optimized */}
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-gray-400 text-xs sm:text-sm animate-fade-in-delay px-4">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0" />
+              <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse flex-shrink-0" />
               <span>Free to Use</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0" />
+              <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse flex-shrink-0" />
               <span>No Credit Card</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0" />
+              <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse flex-shrink-0" />
               <span>2-Minute Setup</span>
             </div>
           </div>
@@ -117,11 +119,11 @@ export default function Hero() {
                   backgroundSize: '40px 40px'
                 }} />
 
-                {/* Central "Start Looting" Button - Mobile optimized */}
+                {/* Central "Watch in Action" Button - Mobile optimized */}
                 <a href="https://app.d20-loot-tracker.com/" className="absolute inset-0 flex items-center justify-center z-20 p-4">
-                  <div className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-6 sm:px-12 py-3 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-lg sm:text-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-110 flex items-center gap-2 sm:gap-3">
+                  <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white px-6 sm:px-12 py-3 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-lg sm:text-2xl shadow-2xl transition-all duration-300 hover:scale-110 flex items-center gap-2 sm:gap-3">
                     <Play className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" fill="white" />
-                    <span className="whitespace-nowrap">Start Looting</span>
+                    <span className="whitespace-nowrap">Watch in Action</span>
                   </div>
                 </a>
               </div>

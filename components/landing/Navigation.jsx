@@ -63,7 +63,7 @@ export default function Navigation() {
             <a href="https://app.d20-loot-tracker.com/" target="_blank" rel="noopener noreferrer">
               <Button
                 size="sm"
-                className="bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-green-500/50 transition-all duration-300"
+                className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-amber-500/50 transition-all duration-300"
               >
                 <Sparkles className="w-4 h-4 mr-2" />
                 Start Free
@@ -107,7 +107,7 @@ export default function Navigation() {
               >
                 <Button
                   size="lg"
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg w-full"
+                  className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-semibold rounded-lg w-full shadow-lg hover:shadow-amber-500/50 transition-all duration-300"
                 >
                   <Sparkles className="w-4 h-4 mr-2" />
                   Start Free
