@@ -296,46 +296,6 @@ export default function DnD5eAPIGuide() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">Time Savings: API vs Manual Entry</h2>
-
-        <div className="overflow-x-auto mb-8">
-          <table className="w-full border-collapse bg-slate-800/30 border border-slate-700 rounded-lg overflow-hidden">
-            <thead>
-              <tr className="bg-slate-700/50">
-                <th className="text-left text-white p-4 border-b border-slate-600">Task</th>
-                <th className="text-center text-white p-4 border-b border-slate-600">Manual Entry</th>
-                <th className="text-center text-white p-4 border-b border-slate-600">API Lookup</th>
-                <th className="text-center text-white p-4 border-b border-slate-600">Time Saved</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-300">
-              <tr className="border-b border-slate-700/50">
-                <td className="p-4">Add basic weapon (Longsword)</td>
-                <td className="text-center p-4">~60 seconds</td>
-                <td className="text-center p-4 text-green-400 font-bold">5 seconds</td>
-                <td className="text-center p-4 text-cyan-400">55 seconds (92%)</td>
-              </tr>
-              <tr className="border-b border-slate-700/50">
-                <td className="p-4">Add magic item with attunement (Ring of Protection)</td>
-                <td className="text-center p-4">~120 seconds</td>
-                <td className="text-center p-4 text-green-400 font-bold">8 seconds</td>
-                <td className="text-center p-4 text-cyan-400">112 seconds (93%)</td>
-              </tr>
-              <tr className="border-b border-slate-700/50">
-                <td className="p-4">Add 5 potions from treasure hoard</td>
-                <td className="text-center p-4">~5 minutes</td>
-                <td className="text-center p-4 text-green-400 font-bold">30 seconds</td>
-                <td className="text-center p-4 text-cyan-400">4.5 minutes (90%)</td>
-              </tr>
-              <tr>
-                <td className="p-4"><strong>Total for typical session (10 items)</strong></td>
-                <td className="text-center p-4"><strong>~15 minutes</strong></td>
-                <td className="text-center p-4 text-green-400 font-bold"><strong>~90 seconds</strong></td>
-                <td className="text-center p-4 text-cyan-400 font-bold"><strong>13.5 minutes</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
 
         <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-500/40 rounded-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-cyan-400 mb-4">Ready to Try API Item Lookup?</h2>
