@@ -58,9 +58,8 @@ export default function Hero() {
 
           {/* Subheading - SEO optimized with keywords */}
           <p className="text-base sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto animate-slide-up-delay leading-relaxed px-4">
-            The best DnD loot tracker for real-time party treasure management.
-            Track gold, split loot, and manage inventories for D&D, Pathfinder,
-            and all your tabletop RPG campaigns.
+            Track gold, split loot instantly, and manage your party's treasure in real-time.
+            Built for D&D, Pathfinder, and all tabletop RPGs.
           </p>
 
           {/* CTAs - Mobile optimized */}
@@ -126,24 +125,6 @@ export default function Hero() {
                     <span className="whitespace-nowrap">Watch in Action</span>
                   </div>
                 </a>
-              </div>
-
-              {/* Floating UI elements - Hidden on very small screens */}
-              <div className="hidden sm:block absolute top-4 sm:top-8 right-4 sm:right-8 bg-green-500/20 backdrop-blur-md border border-green-500/30 rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-green-300 font-semibold animate-bounce-slow shadow-lg">
-                <div className="flex items-center gap-2 text-sm sm:text-base">
-                  <span className="text-xl sm:text-2xl">💰</span>
-                  <span className="whitespace-nowrap">+250 Gold Split!</span>
-                </div>
-              </div>
-              <div className="hidden sm:flex absolute bottom-4 sm:bottom-8 left-4 sm:left-8 bg-cyan-500/20 backdrop-blur-md border border-cyan-500/30 rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-cyan-300 font-semibold items-center gap-2 shadow-lg text-sm sm:text-base">
-                <Users className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span className="whitespace-nowrap">4 Players Synced</span>
-              </div>
-              <div className="hidden sm:block absolute top-[15%] left-[10%] bg-purple-500/20 backdrop-blur-md border border-purple-500/30 rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-purple-300 font-semibold shadow-lg animate-bounce-slow" style={{ animationDelay: '1s' }}>
-                <div className="flex items-center gap-2 text-sm sm:text-base">
-                  <span className="text-xl sm:text-2xl">⚔️</span>
-                  <span className="whitespace-nowrap">+1 Longsword Added</span>
-                </div>
               </div>
             </div>
           </div>
