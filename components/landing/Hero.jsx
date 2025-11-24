@@ -48,13 +48,13 @@ export default function Hero() {
           </div>
 
           {/* Main heading - SEO optimized */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 animate-slide-up leading-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-4 sm:mb-6 animate-slide-up leading-tight">
             Claim Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500">
               Loot
             </span>
             <br />
-            <span className="text-2xl sm:text-4xl md:text-5xl text-gray-300">Before the Rogue Does</span>
+            <span className="text-3xl sm:text-5xl md:text-6xl text-gray-300">Before the Rogue Does</span>
           </h1>
 
           {/* Subheading - SEO optimized with keywords */}

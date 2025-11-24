@@ -52,9 +52,9 @@ export default function LandingPage() {
       <ProblemSolution />
       <Features />
       <HowItWorks />
+      <FAQ />
       <UseCases />
       <TechnicalHighlights />
-      <FAQ />
       <FinalCTA />
       <Footer />
     </div>

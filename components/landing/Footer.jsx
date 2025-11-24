@@ -104,12 +104,9 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 sm:pt-8 border-t border-slate-800">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 mb-4">
-            <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
+          <div className="flex flex-col items-center gap-3 sm:gap-4 mb-4">
+            <p className="text-gray-400 text-xs sm:text-sm text-center">
               © 2024 D20 Loot Tracker • Built for the TTRPG Community
-            </p>
-            <p className="text-gray-500 text-xs sm:text-sm text-center md:text-right">
-              Powered by React, Supabase, and lots of ☕
             </p>
           </div>
           <div className="pt-4 border-t border-slate-800">

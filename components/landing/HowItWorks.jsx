@@ -53,28 +53,28 @@ export default function HowItWorks() {
         </div>
 
         <div className="relative">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {steps.map((step, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative group">
                 {/* Content */}
-                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 text-center hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 relative">
-                  {/* Step number badge - top left corner inside card */}
-                  <div className="absolute top-4 left-4">
-                    <div className={`w-10 h-10 rounded-full ${step.bgColor} flex items-center justify-center text-white text-lg font-bold shadow-lg ${step.shadowColor}`}>
+                <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border-2 border-slate-700 rounded-2xl p-8 text-center hover:border-cyan-500/70 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/30 relative hover:-translate-y-2">
+                  {/* Step number badge - larger and more prominent */}
+                  <div className="absolute -top-4 -left-4">
+                    <div className={`w-14 h-14 rounded-full ${step.bgColor} flex items-center justify-center text-white text-2xl font-bold shadow-xl ${step.shadowColor} border-4 border-slate-900`}>
                       {step.number}
                     </div>
                   </div>
 
-                  <div className={`w-16 h-16 mx-auto rounded-xl ${step.iconBg} flex items-center justify-center mb-6`}>
-                    <step.icon className={`w-8 h-8 ${step.iconColor}`} />
+                  <div className={`w-20 h-20 mx-auto rounded-2xl ${step.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <step.icon className={`w-10 h-10 ${step.iconColor}`} />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{step.description}</p>
+                  <p className="text-gray-300 leading-relaxed text-base">{step.description}</p>
                 </div>
 
-                {/* Arrow for desktop - vertically centered and pushed more to center */}
+                {/* Arrow for desktop - vertically centered */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-9 text-cyan-500 text-4xl">
+                  <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-8 text-cyan-400 text-4xl opacity-50">
                     →
                   </div>
                 )}
@@ -83,9 +83,9 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <a href="https://app.d20-loot-tracker.com/">
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105">
+            <button className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-xl hover:shadow-amber-500/50 transition-all duration-300 hover:scale-105">
               Start Your First Campaign →
             </button>
           </a>
