@@ -47,168 +47,71 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900 relative overflow-hidden">
-      {/* Polyhedral Dice Background Pattern */}
+      {/* D20 Background Pattern */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Mix of D4, D6, D8, D12 dice scattered throughout */}
-        {/* Layer 1 - Top scattered */}
-        {/* D6 - Cube */}
-        <svg className="absolute top-[4%] left-[2%] w-16 h-16 text-cyan-400 opacity-[0.20] rotate-12" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        {/* D8 - Octahedron */}
-        <svg className="absolute top-[6%] left-[12%] w-14 h-14 text-blue-400 opacity-[0.16] -rotate-[25deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        {/* D4 - Tetrahedron */}
-        <svg className="absolute top-[2%] left-[22%] w-20 h-20 text-indigo-400 opacity-[0.18] rotate-45" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        {/* D12 - Dodecahedron */}
-        <svg className="absolute top-[8%] left-[32%] w-16 h-16 text-cyan-500 opacity-[0.17] -rotate-[15deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        {/* D6 - Cube */}
-        <svg className="absolute top-[3%] left-[44%] w-14 h-14 text-blue-500 opacity-[0.15] rotate-[78deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
+        {/* Top left d20 */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute top-[10%] left-[5%] w-64 h-64 opacity-[0.15] rotate-12"
+          draggable="false"
+        />
 
-        {/* D8 - Octahedron */}
-        <svg className="absolute top-[5%] right-[42%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        {/* D4 - Tetrahedron */}
-        <svg className="absolute top-[2%] right-[30%] w-20 h-20 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        {/* D12 - Dodecahedron */}
-        <svg className="absolute top-[7%] right-[20%] w-14 h-14 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        {/* D6 - Cube */}
-        <svg className="absolute top-[4%] right-[10%] w-16 h-16 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        {/* D8 - Octahedron */}
-        <svg className="absolute top-[8%] right-[2%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
+        {/* Top right d20 */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute top-[15%] right-[8%] w-72 h-72 opacity-[0.12] -rotate-45"
+          draggable="false"
+        />
 
-        {/* Layer 2 - Upper middle */}
-        <svg className="absolute top-[22%] left-[4%] w-20 h-20 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        <svg className="absolute top-[25%] left-[14%] w-14 h-14 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        <svg className="absolute top-[20%] left-[26%] w-16 h-16 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute top-[24%] left-[38%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
+        {/* Middle left d20 */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute top-[45%] left-[12%] w-48 h-48 opacity-[0.10] rotate-[135deg]"
+          draggable="false"
+        />
 
-        <svg className="absolute top-[22%] right-[36%] w-16 h-16 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        <svg className="absolute top-[26%] right-[24%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        <svg className="absolute top-[20%] right-[14%] w-20 h-20 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute top-[24%] right-[4%] w-16 h-16 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
+        {/* Middle right d20 */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute top-[50%] right-[15%] w-56 h-56 opacity-[0.13] rotate-[25deg]"
+          draggable="false"
+        />
 
-        {/* Layer 3 - Middle */}
-        <svg className="absolute top-[42%] left-[1%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        <svg className="absolute top-[45%] left-[10%] w-20 h-20 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        <svg className="absolute top-[40%] left-[22%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute top-[46%] left-[34%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        <svg className="absolute top-[42%] left-[47%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
+        {/* Bottom left d20 */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute bottom-[20%] left-[8%] w-60 h-60 opacity-[0.11] -rotate-[60deg]"
+          draggable="false"
+        />
 
-        <svg className="absolute top-[44%] right-[45%] w-16 h-16 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        <svg className="absolute top-[40%] right-[32%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute top-[46%] right-[20%] w-20 h-20 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        <svg className="absolute top-[42%] right-[10%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        <svg className="absolute top-[48%] right-[1%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
+        {/* Bottom right d20 */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute bottom-[25%] right-[5%] w-52 h-52 opacity-[0.14] rotate-[78deg]"
+          draggable="false"
+        />
 
-        {/* Layer 4 - Lower middle */}
-        <svg className="absolute top-[64%] left-[3%] w-16 h-16 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute top-[68%] left-[14%] w-14 h-14 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        <svg className="absolute top-[62%] left-[26%] w-20 h-20 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        <svg className="absolute top-[66%] left-[40%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
+        {/* Small accent d20 (top right) */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute top-[35%] right-[3%] w-40 h-40 opacity-[0.08] rotate-[95deg]"
+          draggable="false"
+        />
 
-        <svg className="absolute top-[64%] right-[38%] w-16 h-16 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute top-[68%] right-[26%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        <svg className="absolute top-[62%] right-[16%] w-20 h-20 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        <svg className="absolute top-[66%] right-[6%] w-16 h-16 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-
-        {/* Layer 5 - Bottom scattered */}
-        <svg className="absolute bottom-[6%] left-[6%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute bottom-[4%] left-[18%] w-16 h-16 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        <svg className="absolute bottom-[8%] left-[30%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        <svg className="absolute bottom-[5%] left-[43%] w-20 h-20 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-
-        <svg className="absolute bottom-[7%] right-[40%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
-        <svg className="absolute bottom-[4%] right-[28%] w-16 h-16 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M30,40 L50,30 L70,40 L70,60 L50,70 L30,60 Z M30,40 L30,60 M50,30 L50,50 M70,40 L50,50 L30,60" />
-        </svg>
-        <svg className="absolute bottom-[8%] right-[16%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L30,50 L50,55 Z M50,15 L70,50 L50,55 Z M50,55 L30,50 L50,85 Z M50,55 L70,50 L50,85 Z M30,50 L70,50" />
-        </svg>
-        <svg className="absolute bottom-[5%] right-[6%] w-20 h-20 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,15 L25,65 L75,65 Z M50,15 L50,65 M25,65 L75,65" />
-        </svg>
-        <svg className="absolute bottom-[3%] right-[1%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,20 L30,30 L35,50 L65,50 L70,30 Z M30,30 L25,55 M70,30 L75,55 M35,50 L30,70 M65,50 L70,70 M25,55 L30,70 L50,80 L70,70 L75,55" />
-        </svg>
+        {/* Small accent d20 (bottom left) */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute bottom-[10%] left-[25%] w-44 h-44 opacity-[0.09] -rotate-[15deg]"
+          draggable="false"
+        />
       </div>
 
       {/* Content */}
