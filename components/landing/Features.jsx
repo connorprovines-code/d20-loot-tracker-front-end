@@ -84,8 +84,8 @@ export default function Features() {
               className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 group"
             >
               <CardHeader className="pb-3 sm:pb-4">
-                <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-${feature.color}-500/20 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <feature.icon className={`w-5 h-5 sm:w-6 sm:h-6 text-${feature.color}-400`} />
+                <div className={`hidden sm:flex w-12 h-12 rounded-xl bg-${feature.color}-500/20 items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <feature.icon className={`w-6 h-6 text-${feature.color}-400`} />
                 </div>
                 <CardTitle className="text-white text-lg sm:text-xl">{feature.title}</CardTitle>
               </CardHeader>
@@ -104,8 +104,8 @@ export default function Features() {
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-3xl mx-auto">
             {additionalFeatures.map((feature, index) => (
               <div key={index} className="flex items-start gap-3">
-                <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-3 h-3 sm:w-4 sm:h-4 text-green-400" />
+                <div className="hidden sm:flex w-6 h-6 rounded-full bg-green-500/20 items-center justify-center flex-shrink-0 mt-0.5">
+                  <Check className="w-4 h-4 text-green-400" />
                 </div>
                 <span className="text-gray-300 text-sm sm:text-base leading-relaxed">{feature}</span>
               </div>

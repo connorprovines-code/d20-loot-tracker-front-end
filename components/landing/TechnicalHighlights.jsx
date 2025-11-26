@@ -47,13 +47,13 @@ export default function TechnicalHighlights() {
           {highlights.map((highlight, index) => (
             <div
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 text-center hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 group"
+              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 sm:p-8 text-center hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 group"
             >
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-cyan-500/30">
-                <highlight.icon className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-cyan-500/30">
+                <highlight.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{highlight.title}</h3>
-              <p className="text-gray-400 text-sm">{highlight.description}</p>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{highlight.title}</h3>
+              <p className="text-gray-400 text-xs sm:text-sm">{highlight.description}</p>
             </div>
           ))}
         </div>
