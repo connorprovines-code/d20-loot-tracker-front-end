@@ -112,6 +112,22 @@ export default function LandingPage() {
           className="absolute bottom-[10%] left-[25%] w-44 h-44 opacity-[0.09] -rotate-[15deg]"
           draggable="false"
         />
+
+        {/* Additional d20 - top center */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute top-[8%] left-[48%] w-52 h-52 opacity-[0.11] rotate-[58deg]"
+          draggable="false"
+        />
+
+        {/* Additional d20 - middle center */}
+        <img
+          src="/images/d20-dice.png"
+          alt=""
+          className="absolute top-[42%] left-[45%] w-38 h-38 opacity-[0.09] -rotate-[88deg]"
+          draggable="false"
+        />
       </div>
 
       {/* Content */}
