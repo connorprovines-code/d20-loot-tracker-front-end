@@ -60,16 +60,16 @@ export default function HowItWorks() {
                 <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border-2 border-slate-700 rounded-2xl p-8 text-center hover:border-cyan-500/70 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/30 relative hover:-translate-y-2">
                   {/* Step number badge - larger and more prominent */}
                   <div className="absolute -top-4 -left-4">
-                    <div className={`w-14 h-14 rounded-full ${step.bgColor} flex items-center justify-center text-white text-2xl font-bold shadow-xl ${step.shadowColor} border-4 border-slate-900`}>
+                    <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full ${step.bgColor} flex items-center justify-center text-white text-xl sm:text-2xl font-bold shadow-xl ${step.shadowColor} border-4 border-slate-900`}>
                       {step.number}
                     </div>
                   </div>
 
-                  <div className={`w-20 h-20 mx-auto rounded-2xl ${step.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`hidden sm:flex w-20 h-20 mx-auto rounded-2xl ${step.iconBg} items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <step.icon className={`w-10 h-10 ${step.iconColor}`} />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
-                  <p className="text-gray-300 leading-relaxed text-base">{step.description}</p>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">{step.title}</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">{step.description}</p>
                 </div>
 
                 {/* Arrow for desktop - vertically centered */}

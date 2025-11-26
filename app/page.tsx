@@ -47,141 +47,167 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900 relative overflow-hidden">
-      {/* D20 Background Pattern - Enhanced */}
+      {/* D20 Background Pattern - Simplified & Enhanced */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Improved D20 SVG path for tighter, more recognizable shape */}
-        {/* Top row */}
-        <svg className="absolute top-[8%] left-[3%] w-28 h-28 text-cyan-400 opacity-[0.18] rotate-12" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <style jsx>{`
+          @keyframes d20-float {
+            0%, 100% { transform: translateY(0px) rotate(var(--rotation)); }
+            50% { transform: translateY(-10px) rotate(calc(var(--rotation) + 5deg)); }
+          }
+          .d20-animated {
+            animation: d20-float 8s ease-in-out infinite;
+          }
+        `}</style>
+
+        {/* Simplified D20 - cleaner icosahedron shape */}
+        {/* Layer 1 - Top scattered */}
+        <svg className="absolute top-[4%] left-[2%] w-16 h-16 text-cyan-400 opacity-[0.20] d20-animated" style={{"--rotation": "12deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[6%] left-[12%] w-14 h-14 text-blue-400 opacity-[0.16] d20-animated" style={{"--rotation": "-25deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[2%] left-[22%] w-18 h-18 text-indigo-400 opacity-[0.18] d20-animated" style={{"--rotation": "45deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[8%] left-[32%] w-16 h-16 text-cyan-500 opacity-[0.17] d20-animated" style={{"--rotation": "-15deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[3%] left-[44%] w-14 h-14 text-blue-500 opacity-[0.15] d20-animated" style={{"--rotation": "78deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[5%] left-[18%] w-20 h-20 text-blue-400 opacity-[0.15] -rotate-45" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute top-[5%] right-[42%] w-16 h-16 text-cyan-400 opacity-[0.19] d20-animated" style={{"--rotation": "-33deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[2%] right-[30%] w-18 h-18 text-indigo-400 opacity-[0.16] d20-animated" style={{"--rotation": "55deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[7%] right-[20%] w-14 h-14 text-blue-400 opacity-[0.17] d20-animated" style={{"--rotation": "-60deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[4%] right-[10%] w-16 h-16 text-cyan-500 opacity-[0.18] d20-animated" style={{"--rotation": "22deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[8%] right-[2%] w-14 h-14 text-blue-500 opacity-[0.15] d20-animated" style={{"--rotation": "-88deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[12%] left-[35%] w-24 h-24 text-cyan-500 opacity-[0.14] rotate-[78deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        {/* Layer 2 - Upper middle */}
+        <svg className="absolute top-[22%] left-[4%] w-18 h-18 text-indigo-400 opacity-[0.18] d20-animated" style={{"--rotation": "95deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[25%] left-[14%] w-14 h-14 text-cyan-400 opacity-[0.16] d20-animated" style={{"--rotation": "-12deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[20%] left-[26%] w-16 h-16 text-blue-500 opacity-[0.19] d20-animated" style={{"--rotation": "44deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[24%] left-[38%] w-14 h-14 text-cyan-500 opacity-[0.15] d20-animated" style={{"--rotation": "-67deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[3%] right-[28%] w-32 h-32 text-indigo-400 opacity-[0.16] rotate-[155deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute top-[22%] right-[36%] w-16 h-16 text-blue-400 opacity-[0.17] d20-animated" style={{"--rotation": "33deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[26%] right-[24%] w-14 h-14 text-indigo-400 opacity-[0.16] d20-animated" style={{"--rotation": "-44deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[20%] right-[14%] w-18 h-18 text-cyan-400 opacity-[0.18] d20-animated" style={{"--rotation": "77deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[24%] right-[4%] w-16 h-16 text-blue-500 opacity-[0.17] d20-animated" style={{"--rotation": "-22deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[15%] right-[12%] w-24 h-24 text-cyan-400 opacity-[0.17] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        {/* Layer 3 - Middle */}
+        <svg className="absolute top-[42%] left-[1%] w-14 h-14 text-cyan-500 opacity-[0.16] d20-animated" style={{"--rotation": "111deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[45%] left-[10%] w-18 h-18 text-blue-400 opacity-[0.19] d20-animated" style={{"--rotation": "-15deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[40%] left-[22%] w-14 h-14 text-indigo-400 opacity-[0.15] d20-animated" style={{"--rotation": "60deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[46%] left-[34%] w-16 h-16 text-cyan-400 opacity-[0.18] d20-animated" style={{"--rotation": "-88deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[42%] left-[47%] w-14 h-14 text-blue-500 opacity-[0.16] d20-animated" style={{"--rotation": "22deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[7%] right-[3%] w-20 h-20 text-blue-500 opacity-[0.13] rotate-[95deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute top-[44%] right-[45%] w-16 h-16 text-cyan-500 opacity-[0.17] d20-animated" style={{"--rotation": "-55deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[40%] right-[32%] w-14 h-14 text-indigo-400 opacity-[0.16] d20-animated" style={{"--rotation": "88deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[46%] right-[20%] w-18 h-18 text-blue-400 opacity-[0.18] d20-animated" style={{"--rotation": "-33deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[42%] right-[10%] w-16 h-16 text-cyan-400 opacity-[0.19] d20-animated" style={{"--rotation": "66deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[48%] right-[1%] w-14 h-14 text-blue-500 opacity-[0.15] d20-animated" style={{"--rotation": "-77deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        {/* Upper-middle row */}
-        <svg className="absolute top-[28%] left-[8%] w-28 h-28 text-blue-400 opacity-[0.16] rotate-[22deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        {/* Layer 4 - Lower middle */}
+        <svg className="absolute top-[64%] left-[3%] w-16 h-16 text-indigo-400 opacity-[0.17] d20-animated" style={{"--rotation": "44deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[68%] left-[14%] w-14 h-14 text-cyan-400 opacity-[0.16] d20-animated" style={{"--rotation": "-99deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[62%] left-[26%] w-18 h-18 text-blue-500 opacity-[0.18] d20-animated" style={{"--rotation": "11deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[66%] left-[40%] w-14 h-14 text-cyan-500 opacity-[0.15] d20-animated" style={{"--rotation": "-44deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[25%] left-[24%] w-20 h-20 text-cyan-500 opacity-[0.14] -rotate-[67deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute top-[64%] right-[38%] w-16 h-16 text-blue-400 opacity-[0.19] d20-animated" style={{"--rotation": "77deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[68%] right-[26%] w-14 h-14 text-indigo-400 opacity-[0.16] d20-animated" style={{"--rotation": "-22deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[62%] right-[16%] w-18 h-18 text-cyan-400 opacity-[0.18] d20-animated" style={{"--rotation": "55deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute top-[66%] right-[6%] w-16 h-16 text-blue-500 opacity-[0.17] d20-animated" style={{"--rotation": "-88deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[32%] right-[22%] w-24 h-24 text-indigo-400 opacity-[0.15] rotate-[44deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        {/* Layer 5 - Bottom scattered */}
+        <svg className="absolute bottom-[6%] left-[6%] w-14 h-14 text-cyan-500 opacity-[0.16] d20-animated" style={{"--rotation": "133deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute bottom-[4%] left-[18%] w-16 h-16 text-blue-400 opacity-[0.18] d20-animated" style={{"--rotation": "-15deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute bottom-[8%] left-[30%] w-14 h-14 text-indigo-400 opacity-[0.15] d20-animated" style={{"--rotation": "66deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+        </svg>
+        <svg className="absolute bottom-[5%] left-[43%] w-18 h-18 text-cyan-400 opacity-[0.19] d20-animated" style={{"--rotation": "-77deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
 
-        <svg className="absolute top-[28%] right-[5%] w-32 h-32 text-cyan-400 opacity-[0.17] -rotate-[88deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute bottom-[7%] right-[40%] w-14 h-14 text-blue-500 opacity-[0.16] d20-animated" style={{"--rotation": "22deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
-
-        {/* Middle row */}
-        <svg className="absolute top-[48%] left-[2%] w-24 h-24 text-cyan-500 opacity-[0.15] rotate-[135deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute bottom-[4%] right-[28%] w-16 h-16 text-cyan-500 opacity-[0.17] d20-animated" style={{"--rotation": "-55deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
-
-        <svg className="absolute top-[45%] left-[15%] w-28 h-28 text-blue-400 opacity-[0.18] -rotate-[15deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute bottom-[8%] right-[16%] w-14 h-14 text-indigo-400 opacity-[0.16] d20-animated" style={{"--rotation": "99deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
-
-        <svg className="absolute top-[52%] left-[32%] w-20 h-20 text-indigo-400 opacity-[0.14] rotate-[60deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute bottom-[5%] right-[6%] w-18 h-18 text-blue-400 opacity-[0.18] d20-animated" style={{"--rotation": "-33deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
-
-        <svg className="absolute top-[48%] right-[28%] w-24 h-24 text-cyan-400 opacity-[0.16] -rotate-[120deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[50%] right-[14%] w-32 h-32 text-blue-500 opacity-[0.17] rotate-[25deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[46%] right-[2%] w-20 h-20 text-cyan-500 opacity-[0.13] -rotate-[77deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        {/* Lower-middle row */}
-        <svg className="absolute top-[68%] left-[6%] w-24 h-24 text-indigo-400 opacity-[0.16] rotate-[88deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[72%] left-[22%] w-28 h-28 text-cyan-400 opacity-[0.18] -rotate-[44deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[68%] left-[38%] w-20 h-20 text-blue-400 opacity-[0.14] rotate-[111deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[70%] right-[25%] w-32 h-32 text-cyan-500 opacity-[0.17] -rotate-[22deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[68%] right-[8%] w-24 h-24 text-indigo-400 opacity-[0.15] rotate-[166deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        {/* Bottom row */}
-        <svg className="absolute bottom-[8%] left-[12%] w-28 h-28 text-blue-500 opacity-[0.16] -rotate-[60deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute bottom-[5%] left-[28%] w-20 h-20 text-cyan-400 opacity-[0.14] rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute bottom-[12%] right-[18%] w-24 h-24 text-cyan-500 opacity-[0.17] -rotate-[99deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute bottom-[6%] right-[4%] w-32 h-32 text-indigo-400 opacity-[0.18] rotate-[55deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        {/* Extra scattered accent dice */}
-        <svg className="absolute top-[18%] left-[42%] w-16 h-16 text-blue-400 opacity-[0.12] rotate-[145deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[38%] left-[48%] w-20 h-20 text-cyan-400 opacity-[0.13] -rotate-[28deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[58%] left-[8%] w-20 h-20 text-indigo-400 opacity-[0.14] rotate-[72deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute bottom-[18%] left-[4%] w-20 h-20 text-cyan-500 opacity-[0.15] -rotate-[111deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute bottom-[22%] left-[35%] w-16 h-16 text-blue-400 opacity-[0.12] rotate-[88deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute top-[62%] right-[35%] w-20 h-20 text-cyan-400 opacity-[0.14] -rotate-[45deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
-        </svg>
-
-        <svg className="absolute bottom-[32%] right-[8%] w-16 h-16 text-indigo-400 opacity-[0.13] rotate-[133deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-          <path d="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z M50,10 L15,70 M50,10 L85,70 M50,10 L50,90 M15,30 L85,70 M85,30 L15,70 M15,30 L50,90 M85,30 L50,90" />
+        <svg className="absolute bottom-[3%] right-[1%] w-16 h-16 text-cyan-400 opacity-[0.17] d20-animated" style={{"--rotation": "44deg"}} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
         </svg>
       </div>
 
