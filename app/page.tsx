@@ -47,157 +47,157 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900 relative overflow-hidden">
-      {/* D20 Background Pattern - Simplified & Enhanced */}
+      {/* D20 Background Pattern - Actual D20 Icosahedron */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Simplified D20 - cleaner icosahedron shape */}
+        {/* Proper D20 - triangular faces in icosahedron structure */}
         {/* Layer 1 - Top scattered */}
         <svg className="absolute top-[4%] left-[2%] w-16 h-16 text-cyan-400 opacity-[0.20] rotate-12" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[6%] left-[12%] w-14 h-14 text-blue-400 opacity-[0.16] -rotate-[25deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[2%] left-[22%] w-20 h-20 text-indigo-400 opacity-[0.18] rotate-45" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[8%] left-[32%] w-16 h-16 text-cyan-500 opacity-[0.17] -rotate-[15deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[3%] left-[44%] w-14 h-14 text-blue-500 opacity-[0.15] rotate-[78deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         <svg className="absolute top-[5%] right-[42%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[2%] right-[30%] w-20 h-20 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[7%] right-[20%] w-14 h-14 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[4%] right-[10%] w-16 h-16 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[8%] right-[2%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         {/* Layer 2 - Upper middle */}
         <svg className="absolute top-[22%] left-[4%] w-20 h-20 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[25%] left-[14%] w-14 h-14 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[20%] left-[26%] w-16 h-16 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[24%] left-[38%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         <svg className="absolute top-[22%] right-[36%] w-16 h-16 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[26%] right-[24%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[20%] right-[14%] w-20 h-20 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[24%] right-[4%] w-16 h-16 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         {/* Layer 3 - Middle */}
         <svg className="absolute top-[42%] left-[1%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[45%] left-[10%] w-20 h-20 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[40%] left-[22%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[46%] left-[34%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[42%] left-[47%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         <svg className="absolute top-[44%] right-[45%] w-16 h-16 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[40%] right-[32%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[46%] right-[20%] w-20 h-20 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[42%] right-[10%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[48%] right-[1%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         {/* Layer 4 - Lower middle */}
         <svg className="absolute top-[64%] left-[3%] w-16 h-16 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[68%] left-[14%] w-14 h-14 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[62%] left-[26%] w-20 h-20 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[66%] left-[40%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         <svg className="absolute top-[64%] right-[38%] w-16 h-16 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[68%] right-[26%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[62%] right-[16%] w-20 h-20 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute top-[66%] right-[6%] w-16 h-16 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         {/* Layer 5 - Bottom scattered */}
         <svg className="absolute bottom-[6%] left-[6%] w-14 h-14 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute bottom-[4%] left-[18%] w-16 h-16 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute bottom-[8%] left-[30%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute bottom-[5%] left-[43%] w-20 h-20 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
 
         <svg className="absolute bottom-[7%] right-[40%] w-14 h-14 text-blue-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute bottom-[4%] right-[28%] w-16 h-16 text-cyan-500 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute bottom-[8%] right-[16%] w-14 h-14 text-indigo-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute bottom-[5%] right-[6%] w-20 h-20 text-blue-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
         <svg className="absolute bottom-[3%] right-[1%] w-16 h-16 text-cyan-400 opacity-[0.19] -rotate-[33deg]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M50,15 L80,35 L70,70 L30,70 L20,35 Z M50,15 L30,70 M50,15 L70,70 M20,35 L80,35" />
+          <path d="M50,10 L20,40 L50,50 Z M50,10 L80,40 L50,50 Z M20,40 L50,50 L35,75 Z M80,40 L50,50 L65,75 Z M35,75 L50,50 L65,75 Z M20,40 L35,75 M80,40 L65,75" />
         </svg>
       </div>
 
